@@ -4,7 +4,7 @@
 .brand {
   background: #0003ff;
   background: linear-gradient(90deg, #0003ff 0%, #15b4c7 50%, #029f59 100%);
-  height: 6em;
+  height: 13vh;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -15,7 +15,7 @@
     color: #e6e6e6; }
 
 .navegationBar {
-  height: 40px;
+  height: 5vh;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -61,6 +61,9 @@
     text-align: left;
     padding-left: 5px; }
 
+.principal {
+  min-height: 75vh; }
+
 .title {
   height: 5em;
   display: flex;
@@ -105,7 +108,7 @@
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: 100%; }
   .content2__article {
-    min-height: 500px;
+    min-height: 550px;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -145,7 +148,8 @@
   .content3__article {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    min-height: 50vh; }
   .content3__div {
     height: 90%;
     width: 90%;
@@ -161,7 +165,8 @@
     transform: scale(1.05, 1.05); }
   .content3__h4 {
     text-transform: uppercase;
-    color: #1d20af; }
+    color: #1d20af;
+    text-align: center; }
   .content3__ul {
     list-style: none;
     padding: 8px; }
@@ -221,19 +226,19 @@
     align-items: center; }
 
 .subtitle6 {
-  height: 2em;
-  margin-top: 2em; }
+  height: 4em;
+  padding-top: 2em; }
   .subtitle6__map {
     margin-left: 2em;
     text-align: left; }
 
 .content6 {
-  height: 85vh; }
+  height: auto; }
   .content6__article {
     margin-left: 3em; }
 
 .foot {
-  height: 50px;
+  height: 7vh;
   background: #0003ff;
   background: linear-gradient(90deg, #0003ff 0%, #15b4c7 50%, #029f59 100%);
   display: grid;
@@ -383,7 +388,7 @@
   .brand {
     background: #0003ff;
     background: linear-gradient(90deg, #0003ff 0%, #15b4c7 50%, #029f59 100%);
-    height: 6em;
+    height: 13vh;
     display: flex;
     justify-content: center;
     align-items: center; }

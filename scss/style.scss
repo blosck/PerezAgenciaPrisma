@@ -1,4 +1,4 @@
-@import 'colorSASS';
+@import 'vars';
 
 *{
     margin: 0;
@@ -6,8 +6,8 @@
 
 .brand{
     background: rgb(0,3,255);
-    background: linear-gradient(90deg, rgba(0,3,255,1) 0%, rgba(21,180,199,1) 50%, rgba(2,159,89,1) 100%);
-    height: 6em;
+    background: $color__barras;
+    height: $altura__header;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
 }
 
 .navegationBar{
-    height: 40px;
+    height: $altura__nav;
     margin: 0;
     display: flex;    
     justify-content: center;
@@ -84,6 +84,10 @@
     }
 }
 
+.principal{
+    min-height: 100vh - ($altura__header + $altura__nav + $altura__footer);
+}
+
 .title{
     height: 5em;
     display: flex;
@@ -143,7 +147,7 @@
     grid-template-rows: 100%;
 
     &__article{
-        min-height: 500px;
+        min-height: 550px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -155,7 +159,7 @@
         width: 90%;
         border-radius: .5em;
         background: rgb(255,252,0);
-        background: linear-gradient(162deg, rgba(255,252,0,1) 0%, rgba(21,199,135,0.8957615117917116) 29%, rgba(255,255,255,1) 100%);
+        background: $color__contenedor;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -200,6 +204,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 50vh;
     }
 
     &__div{
@@ -207,7 +212,7 @@
         width: 90%;
         border-radius: .5em;
         background: rgb(255,252,0);
-        background: linear-gradient(162deg, rgba(255,252,0,1) 0%, rgba(21,199,135,0.8957615117917116) 29%, rgba(255,255,255,1) 100%);
+        background: $color__contenedor;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -223,6 +228,7 @@
     &__h4{
         text-transform: uppercase;
         color: rgb(29, 32, 175);
+        text-align: center;
     }
 
     &__ul{
@@ -300,7 +306,7 @@
         padding: 2em;
         border-radius: .5em;
         background: rgb(255,252,0);
-        background: linear-gradient(162deg, rgba(255,252,0,1) 0%, rgba(21,199,135,0.8957615117917116) 29%, rgba(255,255,255,1) 100%);
+        background: $color__contenedor;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -309,8 +315,8 @@
 }
 
 .subtitle6{
-    height: 2em;
-    margin-top: 2em;
+    height: 4em;
+    padding-top: 2em;
 
     &__map{
         margin-left: 2em;
@@ -319,7 +325,7 @@
 }
 
 .content6{
-    height: 85vh;
+    height: auto;
 
     &__article{
         margin-left: 3em;
@@ -327,9 +333,9 @@
 }
 
 .foot{
-    height: 50px;
+    height: $altura__footer;
     background: rgb(0,3,255);
-    background: linear-gradient(90deg, rgba(0,3,255,1) 0%, rgba(21,180,199,1) 50%, rgba(2,159,89,1) 100%);
+    background: $color__barras;
     display: grid;
     grid-template-columns: 50% 50%;
 
@@ -389,7 +395,7 @@
             width: 90%;
             border-radius: .5em;
             background: rgb(255,252,0);
-            background: linear-gradient(162deg, rgba(255,252,0,1) 0%, rgba(21,199,135,0.8957615117917116) 29%, rgba(255,255,255,1) 100%);
+            background: $color__contenedor;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -443,7 +449,7 @@
             width: 90%;
             border-radius: .5em;
             background: rgb(255,252,0);
-            background: linear-gradient(162deg, rgba(255,252,0,1) 0%, rgba(21,199,135,0.8957615117917116) 29%, rgba(255,255,255,1) 100%);
+            background: $color__contenedor;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -537,7 +543,7 @@
             padding: 2em;
             border-radius: .5em;
             background: rgb(255,252,0);
-            background: linear-gradient(162deg, rgba(255,252,0,1) 0%, rgba(21,199,135,0.8957615117917116) 29%, rgba(255,255,255,1) 100%);
+            background: $color__contenedor;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -550,8 +556,8 @@
 
     .brand{
         background: rgb(0,3,255);
-        background: linear-gradient(90deg, rgba(0,3,255,1) 0%, rgba(21,180,199,1) 50%, rgba(2,159,89,1) 100%);
-        height: 6em;
+        background: $color__barras;
+        height: $altura__header;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -703,7 +709,7 @@
             width: 90%;
             border-radius: .5em;
             background: rgb(255,252,0);
-            background: linear-gradient(162deg, rgba(255,252,0,1) 0%, rgba(21,199,135,0.8957615117917116) 29%, rgba(255,255,255,1) 100%);
+            background: $color__contenedor;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -757,7 +763,7 @@
             width: 90%;
             border-radius: .5em;
             background: rgb(255,252,0);
-            background: linear-gradient(162deg, rgba(255,252,0,1) 0%, rgba(21,199,135,0.8957615117917116) 29%, rgba(255,255,255,1) 100%);
+            background: $color__contenedor;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -853,7 +859,7 @@
             padding: 2em;
             border-radius: .5em;
             background: rgb(255,252,0);
-            background: linear-gradient(162deg, rgba(255,252,0,1) 0%, rgba(21,199,135,0.8957615117917116) 29%, rgba(255,255,255,1) 100%);
+            background: $color__contenedor;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -863,7 +869,7 @@
     .foot{
         height: 85px;
         background: rgb(0,3,255);
-        background: linear-gradient(90deg, rgba(0,3,255,1) 0%, rgba(21,180,199,1) 50%, rgba(2,159,89,1) 100%);
+        background: $color__barras;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;

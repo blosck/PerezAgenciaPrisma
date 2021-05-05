@@ -33,111 +33,113 @@
             <li class="navegationBar__item"><a class="navegationBar__link" href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <div class="title">
-        <h2 class="title__top">Comunícate con nosotros</h2>
-    </div>
-    <section class="content5">
-        <article class="content5__article">
-            <div class="content5__div1">
-                <div class="content5__div2">
-                <form action="" method="GET">
-                    <fieldset>
-                        <legend>TUS DATOS</legend> 
-                        <br>
-                        <label class="contact" for="nombre">Nombre</label>
-                        <input type="text"placeholder="Tu nombre va aquí" id="nombre">
-                        <br><br>
-                        <label class="contact" for="apellido">Apellido</label>
-                        <input type="text" placeholder="y tu apellido aquí" id="apellido">
-                        <br><br>
-                        <label class="contact" for="celular">Celular</label>
-                        <input type="text" placeholder="+56 9" id="celular">
-                        <br><br>
-                        <label class="contact" for="email">Email</label>
-                        <input type="text" placeholder="nombre@ejemplo.com" id="email">
-                        <br><br>
-                        <label class="contact" for="motivo">Motivo de contacto</label>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                Elige una opción
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><a class="dropdown-item" href="#">Consulta de servicio</a></li>
-                              <li><a class="dropdown-item" href="#">Solicitud de servicio</a></li>
-                              <li><a class="dropdown-item" href="#">Sugerencias</a></li>
-                              <li><a class="dropdown-item" href="#">Reclamos</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Postventa</a></li>
-                            </ul>
-                          </div>
-                        <br><br>
-                        <textarea name="" placeholder="Cuéntanos un poco" id="" cols="40" rows="10"></textarea>
-                        <br><br>
-                        <label class="contact" for="eleccion">Eventualmente ¿te gustaría que te comuniquemos? </label>            
-                        <br><br>
-                        <label class="contact" for="si">Sí</label>  
-                        <input type="radio" name="opcion" value="si" id="si">
-                        <label class="contact" for="no">No</label> 
-                        <input type="radio" name="opcion" value="no" id="no">
-                        <br><br>
-                        <div>¿Por qué medio?</div>
-                        <br>
-                        <label class="contact" for="celu">Celular</label> 
-                        <input type="checkbox" name="medio" value="celu" id="celu">
-                        <label class="contact" for="mail">Email</label>
-                        <input type="checkbox" name="medio" value="mail" id="mail">
-                        <br><br>
-                        <label class="contact" for="">Eso es todo :) Si lo has especificado previamente, nos pondremos en contacto contigo.</label>
-                        <br><br>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar</button>
+    <main class="principal">
+        <div class="title">
+            <h2 class="title__top">Comunícate con nosotros</h2>
+        </div>
+        <section class="content5">
+            <article class="content5__article">
+                <div class="content5__div1">
+                    <div class="content5__div2">
+                    <form action="" method="GET">
+                        <fieldset>
+                            <legend>TUS DATOS</legend> 
+                            <br>
+                            <label class="contact" for="nombre">Nombre</label>
+                            <input type="text"placeholder="Tu nombre va aquí" id="nombre">
+                            <br><br>
+                            <label class="contact" for="apellido">Apellido</label>
+                            <input type="text" placeholder="y tu apellido aquí" id="apellido">
+                            <br><br>
+                            <label class="contact" for="celular">Celular</label>
+                            <input type="text" placeholder="+56 9" id="celular">
+                            <br><br>
+                            <label class="contact" for="email">Email</label>
+                            <input type="text" placeholder="nombre@ejemplo.com" id="email">
+                            <br><br>
+                            <label class="contact" for="motivo">Motivo de contacto</label>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Elige una opción
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Consulta de servicio</a></li>
+                                  <li><a class="dropdown-item" href="#">Solicitud de servicio</a></li>
+                                  <li><a class="dropdown-item" href="#">Sugerencias</a></li>
+                                  <li><a class="dropdown-item" href="#">Reclamos</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Postventa</a></li>
+                                </ul>
+                              </div>
+                            <br><br>
+                            <textarea name="" placeholder="Cuéntanos un poco" id="" cols="40" rows="10"></textarea>
+                            <br><br>
+                            <label class="contact" for="eleccion">Eventualmente ¿te gustaría que te comuniquemos? </label>            
+                            <br><br>
+                            <label class="contact" for="si">Sí</label>  
+                            <input type="radio" name="opcion" value="si" id="si">
+                            <label class="contact" for="no">No</label> 
+                            <input type="radio" name="opcion" value="no" id="no">
+                            <br><br>
+                            <div>¿Por qué medio?</div>
+                            <br>
+                            <label class="contact" for="celu">Celular</label> 
+                            <input type="checkbox" name="medio" value="celu" id="celu">
+                            <label class="contact" for="mail">Email</label>
+                            <input type="checkbox" name="medio" value="mail" id="mail">
+                            <br><br>
+                            <label class="contact" for="">Eso es todo :) Si lo has especificado previamente, nos pondremos en contacto contigo.</label>
+                            <br><br>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar</button>
           
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Confirmación</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                <div class="modal-body">
+                                Estás a un click de enviar el formulario, ¿Confirmas que quieres enviarlo?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Olvidé mencionar algo</button>
+                                    <button type="button" class="btn btn-primary">Sí, enviar formulario</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Limpiar formulario</button>
+          
+                            <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Confirmación</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirmación</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                            <div class="modal-body">
-                            Estás a un click de enviar el formulario, ¿Confirmas que quieres enviarlo?
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Olvidé mencionar algo</button>
-                                <button type="button" class="btn btn-primary">Sí, enviar formulario</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        <!-- Button trigger modal -->
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Limpiar formulario</button>
-          
-                        <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Confirmación</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                            ¿Estás seguro de querer limpiar el formulario?
-                            La información que has escrito se borrará y no será enviada.
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-primary">Sí, limpiar formulario</button>
+                                <div class="modal-body">
+                                ¿Estás seguro de querer limpiar el formulario?
+                                La información que has escrito se borrará y no será enviada.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Sí, limpiar formulario</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </fieldset>
+                </form>
+                    </div>
                 </div>
-            </fieldset>
-            </form>
-                </div>
-            </div>
-        </article>
-    </section>
+            </article>
+        </section>
+    </main>    
     <footer class=" foot">
         <div class="foot__left">
             <p class="foot__rights">Todos los derechos reservados.</p>
