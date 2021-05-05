@@ -50,7 +50,11 @@
     }
 
     &__item:hover{
-        background-color: rgb(125, 255, 190);
+        background-color: rgb(61, 152, 255);        
+    }
+
+    &__link:hover{
+        color: lightgray;
     }
 
     &__item:hover &__submenu{
@@ -59,6 +63,7 @@
     
     &__link{ 
         text-decoration: none;
+        color:rgb(48, 48, 48);
     }
 
     &__submenu{
@@ -77,7 +82,7 @@
         border-style: solid;
         border-width: 1px;
         border-color: rgb(0, 0, 0);
-        background-color: rgb(184, 255, 220);
+        background-color: rgb(55, 138, 233);
         text-align: left;
         padding-left: 5px;
 
@@ -177,6 +182,15 @@
         color: rgb(29, 32, 175);
         text-align: center;
     }
+    
+    &__link{
+        text-decoration: none;
+        color: rgb(29, 32, 175);
+    }
+
+    &__link:hover{
+        color: rgb(33, 36, 209);
+    }
 
     &__ul{
         list-style: none;
@@ -191,11 +205,43 @@
 .content21{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+
+    &__article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__div1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0em 1em 0em 1em;
+    }
+
+    &__p{
+        text-align: center;
+    }
+
+    &__div2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img{
+        max-height: 40vh ;
+        max-width: 95vw;
+        border-radius: .5em;
+        margin-bottom: 1em;
+    }
 }
 
 .content3{
-    min-height: 600px;
+    min-height: auto;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -204,7 +250,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 50vh;
+        min-height: 420px;
     }
 
     &__div{
@@ -247,7 +293,7 @@
 }
 
 .content4{
-    min-height: 600px;
+    height: auto;
 
     &__article{
         display: flex;
@@ -414,6 +460,10 @@
             padding-top: 1em;
             text-align: center;
         }
+        
+        &__link{
+            text-decoration: none;
+        }
     
         &__ul{
             list-style: none;
@@ -432,7 +482,7 @@
     }
 
     .content3{
-        min-height: 600px;
+        height: auto;
         display: flex;
         flex-direction: column;
     
@@ -440,6 +490,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            min-height: auto;
+            max-height: auto;
         }
     
         &__div{
@@ -603,7 +655,8 @@
         }
     
         &__item:hover{
-            background-color: rgb(125, 255, 190);
+            background-color: rgb(28, 119, 224);
+            color: lightgray;
         }
     
         &__item:hover &__submenu{
@@ -728,6 +781,10 @@
             padding-top: 1em;
             text-align: center;
         }
+        
+        &__link{
+            text-decoration: none;
+        }
     
         &__ul{
             list-style: none;
@@ -746,7 +803,7 @@
     }
 
     .content3{
-        min-height: 600px;
+        height: auto;
         display: flex;
         flex-direction: column;
     
@@ -754,6 +811,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            min-height: auto;
+            max-height: auto;
         }
     
         &__div{
