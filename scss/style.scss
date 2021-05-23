@@ -422,6 +422,74 @@
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
+    .navegationBar{
+        height: $altura__nav;
+        margin: 0;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+    
+        &__container{
+            list-style: none;
+            display: flex;               
+            flex-direction: row;
+            padding: 0px;  
+            margin: 0;
+        }
+    
+        &__item{
+            border-style: solid;
+            border-width: 2px;
+            border-color: lightgrey;
+            border-radius: .3em;
+            margin: 0px 4px 4px 4px;
+            width: 6em;
+            font-family: 'Manrope', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+        }
+    
+        &__item:hover{
+            background-color: rgb(61, 152, 255);        
+        }
+    
+        &__link:hover{
+            color: lightgray;
+        }
+    
+        &__item:hover &__submenu{
+            display: block;
+        }
+        
+        &__link{ 
+            text-decoration: none;
+            color:rgb(48, 48, 48);
+        }
+    
+        &__submenu{
+            position: absolute;
+            display: none;
+            list-style: none;
+            border-radius: .3em;
+            width: 185px;
+        }
+    
+        &__subitem{
+            margin: .2em;
+            display: block;
+            text-transform: none;
+            border-radius: .2em;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(0, 0, 0);
+            background-color: rgb(55, 138, 233);
+            text-align: left;
+            padding-left: 5px;
+    
+        }
+    }
+
     .content2{
         min-height: auto;
         display: flex;
@@ -577,20 +645,20 @@
 
     .content5{
         min-height: auto;
-        min-width: 700px;
+        min-width: auto;
         margin-bottom: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
         &__article{
-            width: 90vw;
-            min-width: 450px;
+            width: 70vw;
+            min-width: auto;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-    
+
         &__div1{
             padding: 2em;
             border-radius: .5em;
@@ -600,9 +668,11 @@
             justify-content: center;
             align-items: center;
         }
-    
+
     }
+
 }
+
 
 @media only screen and (max-width: 480px){
 
@@ -915,7 +985,7 @@
         }
     
         &__div1{
-            padding: 2em;
+            padding: 1em;
             border-radius: .5em;
             background: rgb(255,252,0);
             background: $color__contenedor;
